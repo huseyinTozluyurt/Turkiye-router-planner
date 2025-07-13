@@ -1,0 +1,168 @@
+/* === Base Reset === */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  overflow-x: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* === Left Panel: Form === */
+.left-panel {
+  width: 60%;
+  min-width: 640px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f4f6;
+  padding: 3rem 2rem;
+  z-index: 2;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  background-color: #ffffff;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 2rem;
+}
+
+/* === Form Fields === */
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #374151;
+}
+
+select,
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  padding: 0.8rem 1.1rem;
+  margin-bottom: 1.3rem;
+  border-radius: 10px;
+  border: 2px solid #cbd5e1; /* darker border */
+  background-color: #ffffff; /* white background */
+  font-size: 1rem;
+  color: #1f2937; /* darker text */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+select::placeholder,
+input::placeholder {
+  color: #9ca3af; /* lighter placeholder */
+}
+
+select:focus,
+input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3); /* glowing focus ring */
+}
+
+
+button {
+  width: 100%;
+  background-color: #3b82f6;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  border-radius: 12px;
+  font-size: 1.15rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+.result {
+  margin-top: 2.2rem;
+  background-color: #e0f2fe;
+  border-left: 4px solid #0ea5e9;
+  padding: 1.5rem;
+  border-radius: 14px;
+}
+
+.result h2 {
+  margin: 0 0 1rem;
+  color: #0369a1;
+  font-size: 1.3rem;
+}
+
+.result p {
+  font-size: 1.05rem;
+  margin: 0.4rem 0;
+}
+
+.error {
+  margin-top: 1rem;
+  color: #dc2626;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* === Right Panel: Background Map === */
+.right-panel {
+  width: 60%;
+  background-image: url('/turkey-map.png');
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  border-left: 1px solid #e5e7eb;
+  z-index: 1;
+}
+
+/* === Responsive Fallback === */
+@media (max-width: 1000px) {
+  #root {
+    flex-direction: column;
+  }
+
+  .left-panel {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .right-panel {
+    display: none;
+  }
+
+  .container {
+    max-width: 90%;
+    padding: 2rem;
+  }
+}
