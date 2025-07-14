@@ -91,4 +91,5 @@ def get_cities():
 def get_coordinates():
     return jsonify(coordinates)
 
-
+if __name__ == '__main__':
+    app.run(debug=True)
