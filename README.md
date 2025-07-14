@@ -4,6 +4,7 @@ A full-stack web application that calculates and visualizes the shortest path be
 
 
 ![Türkiye Route Planner MainPage](screenshots/ilmainpage.png)
+![Türkiye Route Planner Travelling Across Cities in Shortest Path](screenshots/TurkiyeTur.png)
 
 
 ---
