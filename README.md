@@ -15,24 +15,24 @@ A full-stack web application that calculates and visualizes the shortest path be
 ```
 react-shortest-path/
 │
-├── backend/                    # Flask backend (API + pathfinding logic)
+├── backend/                    # API + Path Finding
 │   ├── app.py                  # Flask server with API routes
 │   ├── ilmesafe.py             # Graph algorithm (Dijkstra)
-│   ├── ilmesafe.xlsx           # Distance matrix between cities
-│   ├── turkey_city_coordinates.csv  # Latitude/Longitude of 81 Turkish cities
-│   └── __pycache__/            # Compiled Python cache
+│   ├── ilmesafe.xlsx           
+│   ├── turkey_city_coordinates.csv  
+│   └── __pycache__/           
 │
-├── frontend/                   # React frontend
+├── frontend/                   
 │   ├── src/
-│   │   ├── App.jsx             # Main application logic
-│   │   ├── MapView.jsx         # Leaflet map visualization
-│   │   ├── main.jsx            # Entry point
-│   │   └── assets/             # Static files
-│   ├── public/                 # Static images like turkey-map.png
-│   ├── index.html              # Root HTML file
-│   └── package.json            # React dependencies
+│   │   ├── App.jsx             
+│   │   ├── MapView.jsx         
+│   │   ├── main.jsx           
+│   │   └── assets/             
+│   ├── public/                 
+│   ├── index.html              
+│   └── package.json            
 │
-└── README.md                   # You are here ✅
+└── README.md                   
 ```
 
 ---
