@@ -1,9 +1,7 @@
 services:
   - type: web
-    name: turkiye-route-backend
+    name: turkiye-router-planner
     env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app
-    envVars:
-      - key: PORT
-        value: 10000
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    pythonVersion: 3.10
