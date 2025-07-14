@@ -2,6 +2,10 @@
 
 A full-stack web application that calculates and visualizes the shortest path between Turkish cities using **Dijkstra's algorithm**, with a React-based frontend and Flask-based backend.
 
+
+![Türkiye Route Planner MainPage](screenshots/ilmainpage.png)
+
+
 ---
 
 ## 📁 Project Structure
